@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+html, body{
+    height: 100%;
+}
+#home-section{
+    height: 100%;
+}
+.bg{
+    background: url('/assets/image/home_bg1.png') right;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height:700px;
+    background-repeat: no-repeat;
+    width: 110.6%;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.backdrop-history{
+    background: url('/assets/image/history_bg.png') right;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height:700px;
+    background-repeat: no-repeat;
+    width: 110.6%;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.backdrop-tentang{
+    background: url('/assets/image/tentang_bg.png') right;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height:700px;
+    background-repeat: no-repeat;
+    width: 110.6%;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+#logos{
+    width:15vw;
+    height:15vh;
+}
+#history-section{
+    height: 100%;
+}
+#tentang-section{
+    height: 100%;
+}
+
+a.bar{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #48BDFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Capriola',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-align:center;
+    transition: all 0.2s;
+    background-color:#FFFFFF;
+    }
+a.bar:hover{
+    text-decoration:none;
+    color:#000000;
+    background-color:#48BDFF;
+    }
+@media all and (max-width:30em){a.bar{
+    display:block;
+    margin:0.4em auto;
+    }
+}}
