@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,24 +13,26 @@
     <link rel="stylesheet" type="text/css" href="{!! asset('assets/css/mainstyle.css') !!}">
 
     <title>@yield('title')</title>
+
   </head>
+
   <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-    <a class="navbar-brand " id="logos" href="{{ route('landingPage') }}"><img class="logos img-fluid" src="{!! asset('assets/image/0.png') !!}" alt=""></a>
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand " id="logos" href="{{ route('landingPage') }}"><img class="logos img-fluid" src="{!! asset('assets/image/0.png') !!}" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto"></div>
+          <a class="nav-item nav-link bar" href="#home-section">HOME</a>
+          <a href="#" class="nav-item nav-link bar" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">PRESENSI</a>
+          <a class="nav-item nav-link bar" href="#history-section">HISTORY</a>
+          <a class="nav-item nav-link bar mr-5" href="#tentang-section">TENTANG</a>
       </div>
-        <a class="nav-item nav-link" href="{{ route('landingPage') }}">HOME</a>
-        <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">ABSEN MAGANG</a>
-        <a class="nav-item nav-link mr-5" href="#">HISTORY</a>
-    </div>
+    </nav>
 
-</nav>
     @yield('components')
 
     <!-- Optional JavaScript -->
