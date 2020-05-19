@@ -16,3 +16,4 @@
 // });
 
 Route::get('/','MainController@index')->name('landingPage');
+Route::post('/simpan','MainController@save')->name('saveTime');
