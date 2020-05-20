@@ -8,6 +8,7 @@ html, body{
 #home-section{
     height: 100%;
 }
+
 .bg{
     background: url('/assets/image/home_bg1.png') right;
     background-size: cover;
@@ -20,8 +21,75 @@ html, body{
     left:0;
     z-index: -1;
 }
+img.centerr{
+    display: block;
+    margin: 0 auto;
+}
+img.centerrr{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgba(191, 191, 191,0.1);
+    border-radius: 12px;
+}
+.centerr{
+    width:30vw;
+    height:20vh;
+}
+.centerrr{
+    width:20vw;
+    height:40vh;
+}
+.contact{
+    width:3vw;
+    height:3.7vh;
+    float: left;
+    overflow: hidden;
+}
+.contact:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
 
-.backdrop-history{
+.descript{
+    width:40vw;
+    float: left;
+    min-height:50vh;
+    background:rgba(191, 191, 191,0.5);
+    border: 2px solid rgba(191, 191, 191,0.1);
+    border-radius: 12px;
+    position: relative;
+    animation: move 1s;
+    animation-fill-mode: forwards;
+}
+.descriptt{
+    width:40vw;
+    float: right;
+    min-height:50vh;
+    background:rgba(191, 191, 191,0.5);
+    border: 2px solid rgba(191, 191, 191,0.1);
+    border-radius: 12px;
+    position: relative;
+    animation: move 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes move {
+    from {top: 0px;}
+    to {top: 200px; background-color: rgba(191, 191, 191,0.2);}
+  }
+.c_desript{
+    display: block;
+    margin: auto;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20pt;
+    line-height: 150%;
+}
+p{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15pt !important;
+}
+.backdrop-tentang{
     background: url('/assets/image/history_bg.png') right;
     background-size: cover;
     background-position: center;
@@ -33,19 +101,30 @@ html, body{
     left:0;
     z-index: -1;
 }
-
-.backdrop-tentang{
-    background: url('/assets/image/tentang_bg.png') right;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height:700px;
-    background-repeat: no-repeat;
-    width: 110.6%;
-    top:0;
-    left:0;
-    z-index: -1;
+/* #tentang-section{} */
+.pp{
+    width: 15vw;
+    height: 38vh;
+    border-radius:50%;
+    margin-top: 20px;
 }
+img.pp{
+    border-radius:50%;
+}
+.pp:hover
+{
+    margin-top: 20px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.footbar{
+    display: block;
+    margin-left:550px;
+    width: 60vw;
+    behavior: smooth;
+}
+
 
 #logos{
     width:15vw;
