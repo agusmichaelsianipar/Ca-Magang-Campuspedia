@@ -4,7 +4,18 @@
 @section('components')
   <div class="container">
     <div class="home" id="home-section">
-      <div class="bg"></div>
+      <div class="bg">
+        <div class="descript container-sm ">
+          <div class="logos">
+            <img src="{!! asset('assets/image/0.png') !!}" class="centerr img-fluid" alt="Responsive image">
+          </div>
+          <div class="c_desript">
+            Selamat Datang di Magang Campuspedia
+            <p>Haii Jiwa Muda sistem ini adalah sistem informasi
+            yang berfungsi sebagai presensi online pegawai magang Campuspedia </p>
+          </div>
+        </div>
+      </div>
       <form method="POST" id="">
         {{ csrf_field() }}
       </form>
@@ -66,21 +77,34 @@
         </div>
     </div>
   </div>
-
-  <div class="container">
-    <div id="history-section">
-      <div class="backdrop-history"></div>
-    </div>
-  </div>
-
   <div class="container">
     <div id="tentang-section">
-      <div class="backdrop-tentang"></div>
+      <div class="row backdrop-tentang">
+        <div class="col container-sm "></div>
+        <div class="col descript container-sm ">
+          <div class="logos">
+            <img src="{!! asset('assets/image/agus.jpg') !!}" class="centerrr img-fluid" alt="Responsive image">
+          </div>
+          <div class="c_desript">
+            <center mt-2> Agus Michael Pangihutan Sianipar</center>
+            <p>Sistem Presensi Online Berikut Menggunakan Framework Laravel 5.4.30 Dengan Dukungan
+              Composer 1.9.3 dan Bahasa Pemrograman PHP 7.2.26. Sistem Ini Dikembangkan Dengan Menggunakan Windows 10
+              Namun Mendukung Semua Jenis Sistem Operasi dengan Browser 
+            </p>
+            <center mt-2> Contact Me </center>
+              <div class="center row">
+                <a class="navbar-brand col" href="mailto:agus.14117066@student.itera.ac.id"><img src="{!! asset('assets/image/mail.png') !!}" alt="Instagram" class="contact img-fluid"></a> <br>
+                <a class="navbar-brand col" href="www.instagram.com/agusmichaelsianipar/"><img src="{!! asset('assets/image/ig.png') !!}" alt="Instagram" class="contact img-fluid"></a> <br>
+                <a class="navbar-brand col" href="https://github.com/agusmichaelsianipar/"><img src="{!! asset('assets/image/git.png') !!}" alt="Github" class="contact img-fluid"></a> <br>
+                <a class="navbar-brand col" href="www.facebook.com/desmonmichael.manik/"><img src="{!! asset('assets/image/fb.png') !!}" alt="Facebook" class="contact img-fluid"></a> <br><br><br>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-    <script>
-
+  <script>
     (function () {
       document.querySelector('#save').addEventListener('submit',function(e){
         e.preventDefault()
@@ -100,7 +124,6 @@
         });
       });
     })();
-
     </script>
 @include('sweetalert::alert')    
 @endsection
