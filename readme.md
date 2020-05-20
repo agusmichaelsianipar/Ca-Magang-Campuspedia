@@ -21,27 +21,6 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
 
-## Instalasi Proyek 
-
-- Clone Proyek ini dengan : git clone https://github.com/agusmichaelsianipar/Ca-Magang-Campuspedia.git
-- Lakukan instalasi Composer dengan perintah : composer install
-- Ubah nama file .env.example menjadi .env
-- Jalankan perintah berikut untuk generate APP_KEY : php artisan key:generate
-- Jalankan Laravel Local Development Server dengan : php artisan serve
-- Ketik localhost:8000/ pada url browser anda
-
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
-
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
@@ -53,3 +32,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Instalasi Proyek 
+
+- Clone Proyek ini dengan : git clone https://github.com/agusmichaelsianipar/Ca-Magang-Campuspedia.git
+- Lakukan instalasi Composer dengan perintah : composer install
+- Ubah nama file .env.example menjadi .env
+- Jalankan perintah berikut untuk generate APP_KEY : php artisan key:generate
+- Jalankan Laravel Local Development Server dengan : php artisan serve
+- Ketik localhost:8000/ pada url browser anda
